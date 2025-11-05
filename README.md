@@ -23,43 +23,43 @@ The framework produces hourly system-level performance indicators:
 
 ---
 
-## 🧮 Repository Structure
+## Repository Structure
 
-banff-ev-modelling/
-│
-├── ev_model_core.py # Core simulation classes (EV, EVChargingSimulation, MonteCarloSimulator)
-├── baseline_simulation.py # Baseline validation scenario
-├── monte_carlo_convergence.py # Monte Carlo convergence testing
-├── ev_penetration_analysis.py # Increasing adoption rate scenarios
-├── scenario_simulations.py # Combined stress-test scenarios (temperature, traffic, charger reduction)
-├── scenario_significance_analysis.py # Scenario significance matrix
-├── ev_extras_unnecessary.py # Helper + plotting utilities (non-essential)
-│
-├── data/ # (Optional) Placeholder for local data files
-│ └── README.md # Explains dataset sources and GitHub-hosted links
-│
-├── results/ # Simulation outputs and figures
-│ ├── baseline/
-│ ├── scenarios/
-│ └── convergence/
-│
-├── figures/ # Publication-ready plots and charts
-│
-├── notebooks/ # Original Jupyter notebook versions (archival)
-│
-├── LICENSE
-└── README.md
+banff-ev-modelling/\
+│\
+├── ev_model_core.py # Core simulation classes (EV, EVChargingSimulation, MonteCarloSimulator)\
+├── baseline_simulation.py # Baseline validation scenario\
+├── monte_carlo_convergence.py # Monte Carlo convergence testing\
+├── ev_penetration_analysis.py # Increasing adoption rate scenarios\
+├── scenario_simulations.py # Combined stress-test scenarios (temperature, traffic, charger reduction)\
+├── scenario_significance_analysis.py # Scenario significance matrix\
+├── ev_extras_unnecessary.py # Helper + plotting utilities (non-essential)\
+│\
+├── data/ # (Optional) Placeholder for local data files\
+│ └── README.md # Explains dataset sources and GitHub-hosted links\
+│\
+├── results/ # Simulation outputs and figures\
+│ ├── baseline/\
+│ ├── scenarios/\
+│ └── convergence/\
+│\
+├── figures/ # Publication-ready plots and charts\
+│\
+├── notebooks/ # Original Jupyter notebook versions (archival)\
+│\
+├── LICENSE\
+└── README.md\
 
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 Python ≥ **3.10**
 
-Core libraries:
-% ```bash
-% pip install numpy pandas matplotlib scipy tqdm joblib requests scikit-learn
+Core libraries:\
+% ```bash\
+% pip install numpy pandas matplotlib scipy tqdm joblib requests scikit-learn\
 
 Download "soc_distribution.pkl" to the same folder as the simulation code.
 
