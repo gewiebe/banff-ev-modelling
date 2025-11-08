@@ -37,7 +37,8 @@ Core libraries:\
 ## Running the Simulation
 
 Download the `EVLoadProfile_10.6.2.ipynb` file.
-Download "soc_distribution.pkl" to the same folder.
+
+Download `soc_distribution.pkl` to the same folder.
 
 All simulations are run through `EVLoadProfile_10.6.2.ipynb`
 
