@@ -23,55 +23,23 @@ The framework produces hourly system-level performance indicators:
 
 ---
 
-## Repository Structure
-
-banff-ev-modelling/\
-│\
-├── ev_model_core.py # Core simulation classes (EV, EVChargingSimulation, MonteCarloSimulator)\
-├── baseline_simulation.py # Baseline validation scenario\
-├── monte_carlo_convergence.py # Monte Carlo convergence testing\
-├── ev_penetration_analysis.py # Increasing adoption rate scenarios\
-├── scenario_simulations.py # Combined stress-test scenarios (temperature, traffic, charger reduction)\
-├── scenario_significance_analysis.py # Scenario significance matrix\
-├── ev_extras_unnecessary.py # Helper + plotting utilities (non-essential)\
-│\
-├── data/ # (Optional) Placeholder for local data files\
-│ └── README.md # Explains dataset sources and GitHub-hosted links\
-│\
-├── results/ # Simulation outputs and figures\
-│ ├── baseline/\
-│ ├── scenarios/\
-│ └── convergence/\
-│\
-├── figures/ # Publication-ready plots and charts\
-│\
-├── notebooks/ # Original Jupyter notebook versions (archival)\
-│\
-├── LICENSE\
-└── README.md\
-
-
----
-
 ## Requirements
 
 Python ≥ **3.10**
+Jupyter package
 
 Core libraries:\
 % ```bash\
 % pip install numpy pandas matplotlib scipy tqdm joblib requests scikit-learn\
 
-Download "soc_distribution.pkl" to the same folder as the simulation code.
+
 
 ## Running the Simulation
 
-Each file corresponds to a reproducible simulation scenario.
+Download the `EVLoadProfile_10.6.2.ipynb` file.
+Download "soc_distribution.pkl" to the same folder.
 
-Example — Run the baseline case:
-python baseline_simulation.py
-
-Example — EV penetration sensitivity:
-python ev_penetration_analysis.py
+All simulations are run through `EVLoadProfile_10.6.2.ipynb`
 
 Each script automatically fetches the relevant datasets from GitHub (traffic counts, temperature reductions).
 
